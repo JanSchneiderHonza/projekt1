@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="cs">
+<!--Na CSS styly byla použita pomoc Gemini, nevěděl jsem to jak přesně zformulovat
+nadále jsem se ptal na dovysvětlení. Toto je jen oznámení že tohle bylo použito-->
 <head>
     <style>
         body {
@@ -36,6 +38,7 @@
         aside {
             flex: 1;
             background-color: brown;
+            color: wheat;
             padding: 15px;
         }
         footer {
@@ -65,12 +68,12 @@
             <ul>
                 <li><a href="#home">Domů</a></li>
                 <li><a href="#about">O mně</a></li> 
-                <li><a href="#kontakt">Kontakt</a></li>
+                <li><a href="#duvod">Důvod</a></li>
             </ul>
         </nav>
 
     </header>
-    <main>
+    <main id="home">
         <section>
             <h2>Hlavní článek</h2>
             <article>
@@ -78,7 +81,12 @@
                 <p>Liška je nejrozšířenější středně velká šelma České republiky a vlastně i celé severní polokoule. Je lovena pro kožešinu, případně jako sport (obzvláště ve Velké Británii a jí kulturně ovlivněných zemích), na kožešinu se i chová.</p>
                 <p>Liška je oblíbenou postavou různých bajek a bájí, kde často vystupuje v roli chytrých a lstivých vítězících nad hloupějšími siláky. Ve zvířecí symbolice evropských národů ztělesňuje lstivost a vychytralost, jedná se ale o antropomorfismus (polidšťování).</p>
 
+
             </article>
+            <section id="about" style="margin-top: 40px;">
+                <h2>O mně</h2>
+                <p>tohle je mů první pokus o stránku, je to hodně klamoucí ale co už. Jméno mé je Jan Schneider, a vítám vás na této stránce</p>
+            </section>
         </section>
         <aside>
             <h3>Odkaz na zdroj informací</h3>
@@ -86,7 +94,7 @@
         </aside>
 
     </main>
-    <footer>
+    <footer id="duvod">
         <h3>Proč lišky?</h3>
         <p>Lišky jsou roztomilé a stojím si za tím, že jsou to jedna z nejroztomilejších zvířat na světě</p>
     </footer>
