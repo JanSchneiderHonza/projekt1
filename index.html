@@ -51,12 +51,40 @@ nadále jsem se ptal na dovysvětlení. Toto je jen oznámení že tohle bylo po
         footer a {
             color: wheat;
         }
+
+        @media (max-width: 500px) and (orientation: portrait) {
+            body {
+                background-color: darkred;
+            }
+        }
+
+        @media (max-width: 800px) and (orientation: landscape) {
+            body {
+                background-color: darkorange;
+            }
+        }
+
+        @media (min-width: 501px) and (max-width: 900px) {
+            body {
+                background-color: darkslateblue;
+            }
+        }
+
+        @media (min-width: 801px) and (max-width: 1200px) {
+            body {
+                background-color: darkgreen;
+            }
+        }
+
+        @media (min-width: 1201px) {
+            body {
+                background-color: black;
+            }
+        }
     </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
     <title>Lišky jsou fajn</title>
-
-    
-
-
 </head>
 
 <body>
