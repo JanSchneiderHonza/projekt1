@@ -1,125 +1,72 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
-    <style>
-        body {
-            font-family: 'Courier New', Courier, monospace;
-        }
-
-        #navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: chocolate;
-            color: wheat;
-            padding: 10px 20px;
-        }
-        #navbar ul {
-            display: flex;
-            list-style: none;
-            gap: 15px;
-            margin: 0;
-            padding: 0;
-        }
-        #navbar a {
-            color: wheat;
-            text-decoration: none;
-            font-size: 1.2rem;
-        }
-        main {
-            display: flex;
-            gap: 1.25rem;
-            margin-top: 1.25rem;
-        }
-        section {
-            flex: 3;
-            min-width: 0;
-        }
-        aside {
-            flex: 1;
-            background-color: brown;
-            color: wheat;
-            padding: 1rem;
-            min-width: 0;
-            overflow-wrap: break-word;
-        }
-        footer {
-            background-color: chocolate;
-            color: wheat;
-            text-align: center;
-            padding: 15px;
-            margin-top: 20px;
-        }
-        footer a {
-            color: wheat;
-        }
-
-        @media (max-width: 31.25rem) and (orientation: portrait) {
-            
-        }
-
-        @media (max-width: 50rem) and (orientation: landscape) {
-            
-        }
-
-        @media (min-width: 31.3125rem) and (max-width: 56.25rem) {
-            
-        }
-
-        @media (min-width: 50.0625rem) and (max-width: 75rem) {
-            
-        }
-
-        @media (min-width: 75.0625rem) {
-            
-        }
-    </style>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Zajímavosti o lišce obecné, jejím životě a důvodech, proč jsou lišky tak fascinující.">
     <title>Lišky jsou fajn</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
 <body>
     <header>
         <nav id="navbar">
             <div class="logo">
-                LIŠKYYYYYY
+                <a href="#home">Lišky jsou fajn</a>
             </div>
             <ul>
-                <li><a href="#home" title="Domů"><i class="bi bi-house-door-fill"></i></a></li>
-                <li><a href="#about" title="O mně"><i class="bi bi-person-fill"></i></a></li> 
-                <li><a href="#duvod" title="Důvod"><i class="bi bi-question-circle-fill"></i></a></li>
+                <li><a href="#home" aria-label="Domů" title="Domů"><i class="bi bi-house-door-fill" aria-hidden="true"></i></a></li>
+                <li><a href="#about" aria-label="O autorovi" title="O autorovi"><i class="bi bi-person-fill" aria-hidden="true"></i></a></li>
+                <li><a href="#duvod" aria-label="Proč lišky" title="Proč lišky"><i class="bi bi-question-circle-fill" aria-hidden="true"></i></a></li>
             </ul>
         </nav>
-
     </header>
+
     <main id="home">
-        <section>
-            <h2>Hlavní článek</h2>
+        <section class="content">
+            <div class="page-intro">
+                <span class="eyebrow">Poznejte chytrou šelmu</span>
+                <h1>Liška obecná</h1>
+                <p>Elegantní, přizpůsobivá a mnohem zajímavější, než napovídají pohádky.</p>
+            </div>
             <article>
-                <p>Liška obecná (Vulpes vulpes) je nejrozšířenější divoce žijící zástupce šelem. Oblast jejího přirozeného výskytu zahrnuje Eurasii, Severní Ameriku a severní Afriku. Jako extrémně nebezpečný invazní druh je vedena v Austrálii, kam byla zavlečena v 19. století, a na ostrově Vancouver.</p>
-                <p>Liška je nejrozšířenější středně velká šelma České republiky a vlastně i celé severní polokoule. Je lovena pro kožešinu, případně jako sport (obzvláště ve Velké Británii a jí kulturně ovlivněných zemích), na kožešinu se i chová.</p>
-                <p>Liška je oblíbenou postavou různých bajek a bájí, kde často vystupuje v roli chytrých a lstivých vítězících nad hloupějšími siláky. Ve zvířecí symbolice evropských národů ztělesňuje lstivost a vychytralost, jedná se ale o antropomorfismus (polidšťování).</p>
-
-
+                <h2>Život v přírodě</h2>
+                <p>Liška obecná (<i>Vulpes vulpes</i>) patří k nejrozšířenějším šelmám světa. Přirozeně obývá velkou část Evropy, Asie a Severní Ameriky a najdeme ji také v některých oblastech severní Afriky. Díky mimořádné přizpůsobivosti žije v lesích, na loukách i v blízkosti měst. V Austrálii, kam byla člověkem zavlečena v 19. století, naopak představuje nepůvodní druh, který může ohrožovat místní živočichy.</p>
+                <p>U nás je liška obecná nejběžnější volně žijící šelmou střední velikosti. Poznáme ji podle rezavé srsti, štíhlého těla, špičatých uší a huňatého ocasu, kterému se říká prapor. Zbarvení se může lišit od světlejších až po tmavé odstíny. Ocas jí pomáhá udržovat rovnováhu a v chladném počasí si jím může zakrýt tělo.</p>
+                <p>Liška je všežravec a jídelníček přizpůsobuje tomu, co je právě dostupné. Loví hlavně drobné hlodavce, ale pochutná si také na hmyzu, ptácích, vejcích, žábách či ovoci. Při lovu často naslouchá pohybu kořisti pod trávou nebo sněhem a pak na ni prudce skočí. Zbytky potravy si někdy ukrývá na později.</p>
+                <p>Nejaktivnější bývá za soumraku a v noci, přes den odpočívá v úkrytu. Lišky obvykle žijí samostatně a ke komunikaci využívají pachové značky, zvuky i řeč těla. Dokážou vydávat celou řadu hlasů – od štěkání až po pronikavé volání, kterým se ozývají zejména v období rozmnožování.</p>
+                <p>Liščí rodina využívá noru, která slouží jako bezpečné místo pro odpočinek a odchov mláďat. Po jarním vrhu se o liščata stará především samice, zatímco samec často přináší potravu. Mláďata se postupně učí hledat potravu a během dalších měsíců se osamostatňují.</p>
+                <p>Liška je oblíbenou postavou bajek a pohádek, kde bývá vykreslována jako chytrá a lstivá. Jde však o lidskou představu, ne o důkaz, že zvíře jedná ze zlomyslnosti. Ve skutečnosti její schopnost učit se a přizpůsobovat je především výhodou při hledání potravy a přežití v rozmanitém prostředí.</p>
+                <p class="citation">Zdroj: <cite>Red fox (<i>Vulpes vulpes</i>)</cite>. Animal Diversity Web, University of Michigan Museum of Zoology. <a href="https://animaldiversity.org/accounts/Vulpes_vulpes/" target="_blank" rel="noopener noreferrer">Dostupné online</a> (cit. 13. 10. 2026).</p>
             </article>
-            <section id="about" style="margin-top: 40px;">
-                <h2>O mně</h2>
-                <p>tohle je mů první pokus o stránku, je to hodně klamoucí ale co už. Jméno mé je Jan Schneider, a vítám vás na této stránce</p>
+            <section class="about-card">
+                <h2>Domestikace lišek</h2>
+                <p>Lišky obecné se běžně nepovažují za domestikovaný druh. Známý dlouhodobý výzkum v Novosibirsku, zahájený v 50. letech 20. století pod vedením Dmitrije Beljajeva, ale ukázal, že cíleným výběrem na krotkost lze během generací vyšlechtit lišky, které se k lidem chovají důvěřivěji. Neznamená to, že se z lišek stala domácí zvířata: stále mají potřeby a chování divoké šelmy.</p>
+                <p class="citation">Zdroj: Trut, L. N. (1999). <cite><a href="https://doi.org/10.1511/1999.2.160" target="_blank" rel="noopener noreferrer">Early canid domestication: The farm-fox experiment</a></cite>. <i>American Scientist, 87</i>(2), 160–169.</p>
+            </section>
+            <section id="about" class="about-card">
+                <h2>O autorovi</h2>
+                <p>Toto je můj první pokus o webovou stránku. Jmenuji se Jan Schneider a vítám vás na mé stránce.</p>
             </section>
         </section>
+
         <aside>
-            <h3>Odkaz na zdroj informací</h3>
-            <p>https://cs.wikipedia.org/wiki/Li%C5%A1ka_obecn%C3%A1_(%C5%A1elma)</p>
+            <span class="aside-icon"><i class="bi bi-book-half" aria-hidden="true"></i></span>
+            <h2>Chcete vědět víc?</h2>
+            <p>Další informace o lišce obecné najdete také na Wikipedii.</p>
+            <a href="https://cs.wikipedia.org/wiki/Li%C5%A1ka_obecn%C3%A1_(%C5%A1elma)" target="_blank" rel="noopener noreferrer">Přečíst článek <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
         </aside>
-
     </main>
-    <footer id="duvod">
-        <h3>Proč lišky?</h3>
-        <p>Lišky jsou roztomilé a stojím si za tím, že jsou to jedna z nejroztomilejších zvířat na světě</p>
-    </footer>
 
+    <footer id="duvod">
+        <i class="bi bi-heart-fill" aria-hidden="true"></i>
+        <h2>Proč lišky?</h2>
+        <p>Protože jsou krásné, zvídavé a obdivuhodně přizpůsobivé. A ano – jsou také jedny z nejroztomilejších zvířat na světě!</p>
+        <nav class="validation-links" aria-label="Validace webu">
+            <a href="https://validator.w3.org/nu/" target="_blank" rel="noopener noreferrer" aria-label="Otevřít Nu HTML Checker"><i class="bi bi-filetype-html" aria-hidden="true"></i> Validovat HTML</a>
+            <a href="https://jigsaw.w3.org/css-validator/" target="_blank" rel="noopener noreferrer" aria-label="Otevřít W3C CSS Validation Service"><i class="bi bi-filetype-css" aria-hidden="true"></i> Validovat CSS</a>
+        </nav>
+    </footer>
 </body>
 </html>
