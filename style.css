@@ -202,24 +202,22 @@ aside h2 {
     font-size: 1.4rem;
 }
 
-aside p {
-    margin: 0 0 1.25rem;
+aside p,
+.fox-facts {
     color: #625b76;
 }
 
-aside a {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.45rem;
-    color: #6650b1;
-    font-weight: 700;
-    text-decoration-thickness: 1px;
-    text-underline-offset: 0.2em;
+.fox-facts {
+    display: grid;
+    gap: 0.9rem;
+    margin: 1rem 0 0;
+    padding: 0;
+    list-style: none;
 }
 
-aside a:hover,
-aside a:focus-visible {
-    color: #47318e;
+.fox-facts li {
+    padding-top: 0.9rem;
+    border-top: 1px solid rgb(41 37 61 / 10%);
 }
 
 footer {
